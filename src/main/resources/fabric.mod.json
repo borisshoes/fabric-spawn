@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "fabricspawn",
+  "version": "${version}",
+  "name": "Fabric Spawn",
+  "description": "A /spawn command in the style of CodedSakura's Fabric Homes/Warps/TPA",
+  "authors": [
+    "BorisShoes"
+  ],
+  "contact": {
+    "repo": "https://github.com/borisshoes/fabric-spawn"
+  },
+  "license": "MIT",
+  "icon": "assets/fabricspawn/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.borisshoes.fabricspawn.FabricSpawn"
+    ]
+  },
+  "mixins": [
+    "fabricspawn.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
